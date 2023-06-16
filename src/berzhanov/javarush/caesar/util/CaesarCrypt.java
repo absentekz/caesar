@@ -1,9 +1,9 @@
-package berzhanov.javarush.caesar;
+package berzhanov.javarush.caesar.util;
 
 import java.util.Arrays;
 
 /**
- * Шифрование
+ * Шифр Цезаря
  */
 
 public class CaesarCrypt {
@@ -11,8 +11,6 @@ public class CaesarCrypt {
     private static final char[] upperAlphabet = Alphabet.upperAlphabet.toCharArray();
 
     private static final char[] lowerAlphabet = Alphabet.lowerAlphabet.toCharArray();
-
-    //private static final char[] otherAlphabet = Alphabet.otherAlphabet;
 
     /**
      * <b>Шифрование текста по ключу - сдвиг вперед на количество "ключ"<b/>
@@ -83,5 +81,6 @@ public class CaesarCrypt {
         Arrays.sort(array);
         return Arrays.binarySearch(array, target);
     }
+
 
 }
