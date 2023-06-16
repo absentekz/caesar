@@ -32,7 +32,7 @@ public class CaesarCrypt {
      * <b>Дешифрование текста по ключу - сдвиг назад на количество "ключ"<b/>
      * @param text текст для дешифрования
      * @param key ключ шифрования, например 3 (Г переводится на А)
-     * @return зашифрованный текст
+     * @return дешифрованный текст
      */
     public String decryptText(String text, int key){
         StringBuilder s = new StringBuilder();
@@ -71,7 +71,7 @@ public class CaesarCrypt {
         else {
             searchPos = binarySearch(lowerAlphabet, c);  //поиск в массиве с нижним регистром
             if (searchPos >= 0){
-                int resultPos = searchPos - pos;    //найденная позиция в массиве + pos
+                int resultPos = searchPos - pos;    //найденная позиция в массиве - pos
                 //внутри [] - если перешли границу размера массива, то начать с начала массива
                 return lowerAlphabet[resultPos < 0 ? lowerAlphabet.length + resultPos : resultPos];
             }
