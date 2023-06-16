@@ -11,9 +11,9 @@ public class Main {
 
         String encryptText = c.encryptText(text, 5);
         String decryptText = c.decryptText(encryptText, 5);
-        System.out.println("------------Шифруем текст: ----------");
+        System.out.println("------------Шифруем текст:          ----------");
         System.out.println(text);
-        System.out.println("------------Результат шифрования: ----------");
+        System.out.println("------------Результат шифрования:   ----------");
         System.out.println(encryptText);
         System.out.println("------------Результат дешифрования: ----------");
         System.out.println(decryptText);
