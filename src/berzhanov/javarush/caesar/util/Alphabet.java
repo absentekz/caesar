@@ -3,12 +3,12 @@ package berzhanov.javarush.caesar.util;
 /**
  * Алфавит final, статичные поля
  */
-final class Alphabet {
+public final class Alphabet {
 
-    static final String upperAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+    public static final String upperAlphabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
 
-    static final String lowerAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
+    public static final String lowerAlphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
 
-    static final String otherAlphabet = ".,”\':-!?";
+    public static final String otherAlphabet = ".,”\':-!?";
 
 }
