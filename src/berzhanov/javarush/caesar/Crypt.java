@@ -47,7 +47,7 @@ public class Crypt {
      * <b>пользовать выбрал шифрование файла
      * @throws IOException
      */
-    public void selectEncrypt() throws IOException {
+    private void selectEncrypt() throws IOException {
         Scanner scanner = new Scanner(System.in);
         String scanString = "";
 
@@ -75,7 +75,7 @@ public class Crypt {
      * <b>пользовать выбрал дешифрование файла
      * @throws IOException
      */
-    public void selectDecrypt() throws IOException {
+    private void selectDecrypt() throws IOException {
         Scanner scanner = new Scanner(System.in);
         String scanString = "";
 
@@ -103,7 +103,7 @@ public class Crypt {
      * <b>пользовать выбрал bruteforce
      * @throws IOException
      */
-    public void selectBruteforce() throws IOException {
+    private void selectBruteforce() throws IOException {
         Scanner scanner = new Scanner(System.in);
         String scanString = "";
 
@@ -129,7 +129,7 @@ public class Crypt {
      * @param doEncrypt шифровать или дешифровать
      * @throws IOException
      */
-    public void caesarCryptFile(String fileAbsolutePath, String newFileAbsolutePath, int key, boolean doEncrypt) throws IOException {
+    private void caesarCryptFile(String fileAbsolutePath, String newFileAbsolutePath, int key, boolean doEncrypt) throws IOException {
         Path originFile = Path.of(fileAbsolutePath);
         Path newFile = Path.of(newFileAbsolutePath);
 
@@ -154,7 +154,7 @@ public class Crypt {
      * @param newFileAbsolutePath абсолютный путь до нового файла
      * @throws IOException
      */
-    public void caesarBruteforceFile(String fileAbsolutePath, String newFileAbsolutePath) throws IOException {
+    private void caesarBruteforceFile(String fileAbsolutePath, String newFileAbsolutePath) throws IOException {
         Scanner scanner = new Scanner(System.in);
         String scanString = "";
         Path originFile = Path.of(fileAbsolutePath);
@@ -179,13 +179,5 @@ public class Crypt {
         }
         System.out.println("Готово! Проверьте файл: " + newFileAbsolutePath);
     }
-
-
-
-
-
-
-
-
 
 }
